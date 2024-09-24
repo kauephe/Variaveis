@@ -36,8 +36,10 @@ var nomeComprador = entrada("Digite seu nome: ");
 var idadeComprador = entrada("qual é a sua idade? ");
 
 if(idadeComprador < 18){
-  console.log("Não altorisado voce é menor de idade")
+  
+  console.log(` ola ${nomeComprador} voce não pode comprar a passagem já que sua idade é de ${idadeComprador} ano `);
+  
 }
 if(idadeComprador >= 18){
   console.log("qual o seu destino?")
-}
+ }
