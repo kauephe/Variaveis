@@ -13,8 +13,27 @@ idade = idade  + 1
 console.log(anoAtual)
 
 console.log("Olá eu sou " + nomeCompleto + "estamos no ano " + anoAtual + " minha idade é " + idade + " e eu nasci no ano de " + anoNacimento)
-
 console.log(`oi eu sou ${nomeCompleto} meu ano é ${anoNacimento} minha idade é ${idade}`)
+
+const loginCerto = "kaue phelipe";
+const senhaCerto = 123456;
+console.log("======================");
+console.log("=AGÊNTES DE VIAGENS=");
+console.log("======================");
+
+console.log("Faça seu login");
+
+var login = entrada("digite seu login: ");
+var senha = entrada("digite sua senha: ");
+
+while(login != loginCerto){
+  console.log("Login Incorreto");
+  login = entrada("digite seu login novamente: ")
+};
+while(senha != senhaCerto){
+  console.log("Senha Incorreta");
+  senha = entrada("digite sua senha novamente: ");
+}
 
 const listaDeViagens = new Array(
   ` Estados Unidos`,
